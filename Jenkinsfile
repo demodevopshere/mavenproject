@@ -20,6 +20,9 @@ pipeline {
             input {
                 message "Approved By ReleaseManager"
             }
+            steps {
+                sh 'echo "hello"'
+            }
         }
         stage('DevDeploy') {
             steps {
