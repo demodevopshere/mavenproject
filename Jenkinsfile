@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Approval from release manager') {
              input {
-                 message 'Approved By ReleaseManager'
+                 message "Approved By ReleaseManager"
              }
         }
         stage('DevDeploy') {
